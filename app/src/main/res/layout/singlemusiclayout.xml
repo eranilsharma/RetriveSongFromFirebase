@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_900"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+
+        <TextView
+            android:id="@+id/txtsongname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/btnlike"
+            android:text="@string/app_name"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/btnlike" />
+
+
+        <Button
+            android:id="@+id/btnshare"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_share_white_24dp" />
+
+        <Button
+            android:id="@+id/btnlike"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_star_white_24dp" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_below="@+id/btnshare"
+    android:layout_marginTop="16dp"
+    android:background="@color/grey_50"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/txtArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtsongname"
+            android:layout_alignStart="@+id/txtsongname"
+            android:layout_alignLeft="@+id/txtsongname"
+            android:textColor="@color/grey_50"
+            android:layout_marginBottom="-16dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
